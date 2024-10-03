@@ -1,8 +1,4 @@
-//@import 'reset';
-@import 'grid';
-
-
-div {
-font-family: 'Aref Ruqaa', serif;
-font-family: 'PT Mono', monospace;
-}
+@import "reset";
+@import "grid";
+@import "variaveis_e_mixins";
+@import "geral";
