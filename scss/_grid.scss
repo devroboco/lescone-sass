@@ -7,14 +7,15 @@ $s-device: 480px;
 
 // Box-sizing
 *,
-*::after *::before {
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
-// Mixin de media-querie
+// Mixin de media-queries
 @mixin d($size) {
   @if $size == l {
-    @media screen and (min-width: $l-device) {
+    @media screen and (min-width: #{$l-device}) {
       @content;
     }
   } @else if $size == m {
@@ -63,7 +64,7 @@ $s-device: 480px;
   }
 }
 
-[class^="grid"] {
+[class^="grid-"] {
   @include grid-structure;
 }
 
